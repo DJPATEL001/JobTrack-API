@@ -91,12 +91,22 @@ jobtrack/
 │   ├── auth.py
 │   ├── dependencies.py
 │   │
-│   └── routers/
-│       ├── __init__.py
-│       ├── auth.py
-│       ├── jobs.py
-│       ├── interviews.py
-│       └── dashboard.py
+│   ├── routers/
+│   │   ├── __init__.py
+│   │   ├── auth.py
+│   │   ├── jobs.py
+│   │   ├── interviews.py
+│   │   └── dashboard.py
+│   │
+│   └── alembic/
+│       ├── versions/
+│       │   ├── 317023b32db4_initial_migration.py
+│       │   ├── c284a415be7e_add_company_website.py
+│       │   └── 4e5d7093e7c0_add_interviews_table.py
+│       │
+│       ├── env.py
+│       ├── README
+│       └── script.py.mako
 │
 ├── tests/
 │   ├── __init__.py
@@ -106,13 +116,6 @@ jobtrack/
 │   ├── test_interviews.py
 │   └── test_dashboard.py
 │
-├── alembic/
-│   ├── versions/
-│   ├── env.py
-│   ├── README
-│   └── script.py.mako
-│
-├── .env
 ├── .env.example
 ├── .gitignore
 ├── alembic.ini
