@@ -82,6 +82,9 @@ FastAPI
 ```text
 jobtrack/
 │
+├── docs/
+|   └── jobtrack-architecture.png
+|
 ├── app/
 │   ├── __init__.py
 │   ├── main.py
